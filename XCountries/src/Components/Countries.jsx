@@ -25,6 +25,7 @@ export default function Countries(){
 
     return(
         <>
+        <h1>Hello from Countries</h1>
         <div 
             style= {{
                 display: "flex",
