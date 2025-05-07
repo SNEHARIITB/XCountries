@@ -8,7 +8,7 @@ export default function Countries(){
 
     const [countries, setCountries]  = useState([]);
 
-    useEffect(()=>(
+    useEffect(()=>{
         async function fetchData(){
             try{
                 const response = await axios.get(countriesEndpoint);
@@ -20,12 +20,12 @@ export default function Countries(){
                 console.error("Error fetching data: ", error)
             }
         }
-    ),[]);
+        fetchData();
+    },[]);
 
 
     return(
         <>
-        <h1>Hello from Countries</h1>
         <div 
             style= {{
                 display: "flex",
