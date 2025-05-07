@@ -13,7 +13,7 @@ export default function Countries(){
             try{
                 const response = await axios.get(countriesEndpoint);
                 setCountries(response.data);
-                console.log(response.data);
+                //console.log(response.data);
 
             }
             catch(error){
