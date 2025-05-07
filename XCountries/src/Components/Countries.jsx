@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "./Card/Card.jsx";
+import Card from "./Card/Card";
 
 const countriesEndpoint = "https://xcountries-backend.azurewebsites.net/all";
 

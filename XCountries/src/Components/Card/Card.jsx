@@ -9,7 +9,7 @@ export default function Card({ country }) {
     return (
       <>
         <div className={styles.card}>
-          <img src={country.flag} alt={country.name} className={styles.image} />
+          <img src={country.flag} alt={country.name} className={styles.imageflag} />
           <h2 className={styles.cname}>{country.name}</h2>
         </div>
       </>
