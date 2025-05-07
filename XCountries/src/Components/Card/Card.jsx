@@ -10,6 +10,7 @@ export default function Card(props){
 
     return(
         <>
+        <h1>Hello from Card</h1>
         <div className={styles.card}>
             <img src={props.country.flag} alt={props.country.name} className={styles.image}/>
             <h2 className={styles.cname}>{props.country.name}</h2>
